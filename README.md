@@ -33,4 +33,4 @@ Figure 1 illustrates a circuit diagram of an embedded system prototype of a blin
     3. PIC16F887 microcontroller pins <14:13> are not connected and are used for general PORTA 
        I/O function. An internal oscillator is selected.
     4. Master clear pin <1> of PIC16F887 is disabled and PORTE<RE3> set for I/O function.  
-
+![Blinking LED] BlinkingLed.png
