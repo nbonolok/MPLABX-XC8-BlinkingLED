@@ -33,4 +33,37 @@ Figure 1 illustrates a circuit diagram of an embedded system prototype of a blin
     3. PIC16F887 microcontroller pins <14:13> are not connected and are used for general PORTA 
        I/O function. An internal oscillator is selected.
     4. Master clear pin <1> of PIC16F887 is disabled and PORTE<RE3> set for I/O function.  
-![Blinking LED] BlinkingLed.png
+![Blinking LED](https://github.com/nbonolok/MPLAX-XC8-BlinkingLED/blob/main/BlinkingLed.png)
+
+## Source Code XC8 C
+The listing below is the XC8 source code for a blinking LED connected to the PIC16F887 microcontroller’s PORTB<RB0> pin. 
+```C
+//CONFIG1
+#pragma config FOSC = INTRC_NOCLKOUT, WDTE = OFF, PWRTE = ON, MCLRE = OFF, CP = OFF
+#pragma config CPD = OFF, BOREN = OFF, IESO = OFF,  FCMEN = OFF, LVP = OFF 
+//CONFIG2
+#pragma config BOR4V = BOR21V,  WRT = OFF
+#define _XTAL_FREQ 8000000
+
+#include <xc.h>
+#include<stdbool.h>
+void main(void) {
+    OSCCON              =   0x77; 
+    INTCONbits.GIE      =   0x00;
+    ANSELH              =   0x00;
+    TRISBbits.TRISB0    =   0x00;
+    PORTBbits.RB0       =   0x00; 
+    __delay_ms(50);
+    while(true){
+        PORTBbits.RB0 = 0x00;
+         __delay_ms(1000);
+        PORTBbits.RB0 = 0x01;
+        __delay_ms(1000);
+    }
+    return;
+}
+
+ 
+ 
+```
+
