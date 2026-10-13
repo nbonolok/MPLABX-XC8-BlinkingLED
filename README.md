@@ -47,6 +47,37 @@ Figure 1 illustrates a circuit diagram of an embedded system prototype of a blin
        width="500">
 </p>
 
+## Pseudocode
+```text
+@PROGRAMMER: BK NYONI
+@PROGRAM:    BlinkingLed
+@DESC:       This program configures RB0 as a digital output and continuously switches 
+@            the output OFF and ON, with a one-second delay between each state. 
+@DATE:       DD/MM/YYYY
+@VERSION:    0.0.1
+
+PROGRAM BlinkingLed
+ BEGIN
+      INVOKE intializePIC
+      WHILE TRUE
+            Turn ON PORTB pin RB0
+            WAIT for one second
+            Turn OFF PORTB pin RB0
+            WAIT for one second
+      ENDWHILE
+
+      SUBROUTINE intializePIC
+            SELECT internal 8Mhz oscillator
+            Disable all Interrupts
+            SET PORTB to Digital MODE
+            SET PORTB RB0 pin direction to Output
+            CLEAR PORTB RB0 
+            WAIT for 50ms
+        RETURN
+     ENDSUBROUTINE
+END
+```
+
 ## Source Code XC8 C
 The listing below is the XC8 source code for a blinking LED connected to the PIC16F887 microcontroller’s PORTB&lt;RB0&gt; pin. 
 ```C
@@ -57,8 +88,8 @@ The listing below is the XC8 source code for a blinking LED connected to the PIC
  * Clock Frequency: 8 MHz (Internal Oscillator)
  *
  * Description:
- * This program configures RB0 as a digital output and continuously switches the output OFF and ON, with a
- * one-second delay between each state.
+ * This program configures RB0 as a digital output and continuously switches the output OFF
+ * and ON, with a one-second delay between each state.
  */
 
 //CONFIG1
