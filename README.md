@@ -39,12 +39,18 @@ Figure 1 illustrates a circuit diagram of an embedded system prototype of a blin
        alt="Blinking LED"
        width="800">
 </p>
+<p align="center">
+<img src="https://github.com/nbonolok/MPLABX-XC8-BlinkingLED/blob/main/lab2PCB.png"
+alt="3D Blinking LED"
+width="800">
+    
+</p>
 
 ## FLOWCHART: Blinking LED
 <p align="center">
   <img src="https://github.com/nbonolok/MPLABX-XC8-BlinkingLED/blob/main/LEDsflowchat.png"
        alt="FLOWCHART Blinking LED"
-       width="500">
+       width="600">
 </p>
 
 ## Pseudocode
