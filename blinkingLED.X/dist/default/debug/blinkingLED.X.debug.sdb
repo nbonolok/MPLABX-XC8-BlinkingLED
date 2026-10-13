@@ -1,0 +1,72 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"10 /opt/microchip/xc8/v2.46/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 /opt/microchip/xc8/v2.46/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 /opt/microchip/xc8/v2.46/pic/sources/c99/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"21 /home/nbonolok/Desktop/CTEN415/blinkingLED.X/blinkingLED.c
+[v _initializePIC initializePIC `(v  1 e 1 0 ]
+"29
+[v _main main `(v  1 e 1 0 ]
+[s S77 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"243 /home/nbonolok/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8/pic/include/proc/pic16f887.h
+[u S86 . 1 `S77 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES86  1 e 1 @6 ]
+[s S23 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"480
+[s S32 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S37 . 1 `S23 1 . 1 0 `S32 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES37  1 e 1 @11 ]
+[s S56 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1493
+[u S65 . 1 `S56 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES65  1 e 1 @134 ]
+"1860
+[v _OSCCON OSCCON `VEuc  1 e 1 @143 ]
+"3447
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"29 /home/nbonolok/Desktop/CTEN415/blinkingLED.X/blinkingLED.c
+[v _main main `(v  1 e 1 0 ]
+{
+"38
+} 0
+"21
+[v _initializePIC initializePIC `(v  1 e 1 0 ]
+{
+"28
+} 0
