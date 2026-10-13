@@ -38,6 +38,18 @@ Figure 1 illustrates a circuit diagram of an embedded system prototype of a blin
 ## Source Code XC8 C
 The listing below is the XC8 source code for a blinking LED connected to the PIC16F887 microcontroller’s PORTB&lt;RB0&gt; pin. 
 ```C
+/* Programmer: BK NYONI
+ * Program: LED Blinking Using PIC16F887
+ * Compiler: MPLAB XC8
+ * Microcontroller: PIC16F887
+ * Clock Frequency: 8 MHz (Internal Oscillator)
+ *
+ * Description:
+ * This program configures RB0 as a digital output and
+ * continuously switches the output OFF and ON, with a
+ * one-second delay between each state.
+ */
+
 //CONFIG1
 #pragma config FOSC = INTRC_NOCLKOUT, WDTE = OFF, PWRTE = ON, MCLRE = OFF, CP = OFF
 #pragma config CPD = OFF, BOREN = OFF, IESO = OFF,  FCMEN = OFF, LVP = OFF 
