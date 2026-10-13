@@ -23,6 +23,7 @@ void initializePIC(){
     INTCONbits.GIE      =   0x00;
     ANSELH              =   0x00;
     TRISBbits.TRISB0    =   0x00;
+    TRISBbits.TRISB1    =   0x00;
     PORTBbits.RB0       =   0x00; 
     __delay_ms(50);
 }
