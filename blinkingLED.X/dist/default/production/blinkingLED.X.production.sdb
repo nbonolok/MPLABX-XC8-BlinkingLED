@@ -3,18 +3,18 @@
 [d edition pro ]
 [d chip 16F887 ]
 [d frameptr 0 ]
-"10 /opt/microchip/xc8/v2.46/pic/sources/c99/common/sprcadd.c
+"21 C:\Users\ic\OneDrive\Documents\GitHub\MPLABX-XC8-BlinkingLED\blinkingLED.X\blinkingLED.c
+[v _initializePIC initializePIC `(v  1 e 1 0 ]
+"30
+[v _main main `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"4 /opt/microchip/xc8/v2.46/pic/sources/c99/common/Umul8_16.c
+"4 C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"6 /opt/microchip/xc8/v2.46/pic/sources/c99/pic/__eeprom.c
+"6 C:\Program Files\Microchip\xc8\v4.00\pic\sources\c99\pic\__eeprom.c
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"21 /home/nbonolok/Desktop/CTEN415/blinkingLED.X/blinkingLED.c
-[v _initializePIC initializePIC `(v  1 e 1 0 ]
-"29
-[v _main main `(v  1 e 1 0 ]
 [s S77 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
@@ -24,7 +24,7 @@
 `uc 1 RB6 1 0 :1:6 
 `uc 1 RB7 1 0 :1:7 
 ]
-"243 /home/nbonolok/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8/pic/include/proc/pic16f887.h
+"243 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\pic\include\proc/pic16f887.h
 [u S86 . 1 `S77 1 . 1 0 ]
 [v _PORTBbits PORTBbits `VES86  1 e 1 @6 ]
 [s S23 . 1 `uc 1 RBIF 1 0 :1:0 
@@ -60,13 +60,13 @@
 [v _OSCCON OSCCON `VEuc  1 e 1 @143 ]
 "3447
 [v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
-"29 /home/nbonolok/Desktop/CTEN415/blinkingLED.X/blinkingLED.c
+"30 C:\Users\ic\OneDrive\Documents\GitHub\MPLABX-XC8-BlinkingLED\blinkingLED.X\blinkingLED.c
 [v _main main `(v  1 e 1 0 ]
 {
-"38
+"39
 } 0
 "21
 [v _initializePIC initializePIC `(v  1 e 1 0 ]
 {
-"28
+"29
 } 0

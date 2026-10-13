@@ -8,7 +8,9 @@ ___sp 0 0 STACK 2
 btemp 7E 0 ABS 0
 start 0 0 CODE 0
 reset_vec 0 0 CODE 0
+btemp0 7E 0 ABS 0
 wtemp0 7E 0 ABS 0
+btemp1 7F 0 ABS 0
 __Hconfig 2009 0 CONFIG 4
 __Lconfig 0 0 CONFIG 4
 __Hram 0 0 ABS 0
@@ -34,6 +36,9 @@ __Lsfr2 0 0 ABS 0
 __Hsfr3 0 0 ABS 0
 __Lsfr3 0 0 ABS 0
 ___heap_hi 0 0 ABS 0
+ltemp0a 80 0 ABS 0
+ttemp0a 7F 0 ABS 0
+wtemp0a 7F 0 ABS 0
 ___stackhi 0 0 ABS 0
 __Hcode 0 0 ABS 0
 __Lcode 0 0 ABS 0
@@ -64,7 +69,7 @@ __Lbank3 0 0 ABS 0
 ___latbits 2 0 ABS 0
 __Hpowerup 0 0 CODE 0
 __Lpowerup 0 0 CODE 0
-__ptext1 7BB 0 CODE 0
+__ptext1 7BA 0 CODE 0
 ___stack_hi 0 0 STACK 2
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
@@ -95,7 +100,7 @@ intlevel0 0 0 ENTRY 0
 intlevel1 0 0 ENTRY 0
 intlevel2 0 0 ENTRY 0
 intlevel3 0 0 ENTRY 0
-_initializePIC 7BB 0 CODE 0
+_initializePIC 7BA 0 CODE 0
 intlevel4 0 0 ENTRY 0
 intlevel5 0 0 ENTRY 0
 __end_of_initializePIC 7D3 0 CODE 0
@@ -113,27 +118,28 @@ reset_vec 0 5 CODE 0 0
 cinit FF8 FFF CODE FF8 0
 cstackCOMMON 70 74 COMMON 70 1
 maintext FA6 FF7 CODE FA6 0
-text1 F76 FA5 CODE F76 0
+text1 F74 FA5 CODE F74 0
 %locals
-dist/default/debug/blinkingLED.X.debug.o
-/tmp/xcXkHaCHo/driver_tmp_1.s
+dist/default/debug\blinkingLED.X.debug.o
+C:\Users\ic\AppData\Local\Temp\xcAslu0.0\driver_tmp_1.s
 435 7FC 0 CODE 0
 438 7FC 0 CODE 0
 444 7FC 0 CODE 0
 446 7FC 0 CODE 0
 447 7FD 0 CODE 0
 blinkingLED.c
-29 7D3 0 CODE 0
 30 7D3 0 CODE 0
-32 7D8 0 CODE 0
-33 7DB 0 CODE 0
-34 7E8 0 CODE 0
-35 7EB 0 CODE 0
-21 7BB 0 CODE 0
-22 7BB 0 CODE 0
-23 7BF 0 CODE 0
-24 7C0 0 CODE 0
-25 7C3 0 CODE 0
-26 7C6 0 CODE 0
-27 7C9 0 CODE 0
-28 7D2 0 CODE 0
+31 7D3 0 CODE 0
+33 7D8 0 CODE 0
+34 7DB 0 CODE 0
+35 7E8 0 CODE 0
+36 7EB 0 CODE 0
+21 7BA 0 CODE 0
+22 7BA 0 CODE 0
+23 7BE 0 CODE 0
+24 7BF 0 CODE 0
+25 7C2 0 CODE 0
+26 7C5 0 CODE 0
+27 7C6 0 CODE 0
+28 7C9 0 CODE 0
+29 7D2 0 CODE 0
