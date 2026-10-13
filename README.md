@@ -1,7 +1,7 @@
 # MPLABX-XC8-BlinkingLED
 Microchip XC8 project for three LEDs connected to PORTB&lt;RB3:RB0&gt; pins of a  PIC16F887 microcontroller.
 ## Overview
-In high-level programming languages, it is common practice for the first program to print the message "Hello world" as output to the display. While in low-level programming, such as assembly or Embedded C, the program toggles a bit between a digital one (1) and a zero (0). A single bit can be used to activate or deactivate any electronic component, such as an LED, Motor, vehicle indicator, or even in a critical situation like turning on a beep sound for the life support system. When eight bits are grouped, they form a byte, which is the foundation of representing data- information that is used in gaming, robotics, digital communications, and any other modern-day technology. It all starts with a single digital bit, which is a 1 or 0.
+In high-level programming languages, it is common practice for the first program to print the message "Hello world" as output to the display. In low-level programming, such as assembly or Embedded C, the program toggles a bit between a digital one (1) and a zero (0). A single bit can be used to activate or deactivate any electronic component, such as an LED, Motor, vehicle indicator, or even in a critical situation like turning on a beep sound for the life support system. When eight bits are grouped, they form a byte, which is the foundation of representing data- information that is used in gaming, robotics, digital communications, and any other modern-day technology. It all starts with a single digital bit, which is a 1 or 0.
 
 ## Objectives
     • To identify the pinout of PIC16F887
@@ -59,13 +59,16 @@ The listing below is the XC8 source code for a blinking LED connected to the PIC
 
 #include <xc.h>
 #include<stdbool.h>
-void main(void) {
+void initializePIC(){
     OSCCON              =   0x77; 
     INTCONbits.GIE      =   0x00;
     ANSELH              =   0x00;
     TRISBbits.TRISB0    =   0x00;
     PORTBbits.RB0       =   0x00; 
     __delay_ms(50);
+}
+void main(void) {
+    initializePIC();
     while(true){
         PORTBbits.RB0 = 0x00;
          __delay_ms(1000);
