@@ -1,5 +1,5 @@
 # MPLABX-XC8-BlinkingLED
-Microchip XC8 project for three LEDs connected to PORTB&lt;3:0> pins of a  PIC16F887 microcontroller.
+Microchip XC8 project for three LEDs connected to PORTB&lt;RB3:RB0&gt; pins of a  PIC16F887 microcontroller.
 ## Overview
 In high-level programming languages, it is common practice for the first program to print the message "Hello world" as output to the display. While in low-level programming, such as assembly or Embedded C, the program toggles a bit between a digital one (1) and a zero (0). A single bit can be used to activate or deactivate any electronic component, such as an LED, Motor, vehicle indicator, or even in a critical situation like turning on a beep sound for the life support system. When eight bits are grouped, they form a byte, which is the foundation of representing data- information that is used in gaming, robotics, digital communications, and any other modern-day technology. It all starts with a single digital bit, which is a 1 or 0.
 
@@ -26,7 +26,7 @@ In high-level programming languages, it is common practice for the first program
     • Computer 
 
 ## Circuit diagram
-Figure 1 illustrates a circuit diagram of an embedded system prototype of a blinking LED. At the core of the prototype is a PIC16F887 microcontroller that acts as the brain of the circuit. Three light-emitting diodes <D3:D1> are connected to the microcontroller’s PORTB<RB2:RB0> port pins through in-series 220R resistors. The PIC16F887 microcontroller circuit's additional configuration is as follows:
+Figure 1 illustrates a circuit diagram of an embedded system prototype of a blinking LED. At the core of the prototype is a PIC16F887 microcontroller that acts as the brain of the circuit. Three light-emitting diodes &lt;D3:D1&gt; are connected to the microcontroller’s &lt;PORTB<RB2:RB0&gt; port pins through in-series 220R resistors. The PIC16F887 microcontroller circuit's additional configuration is as follows:
 
     1. VDD positive pins <32,11> are connected to +5VDC.
     2. VSS ground reference pins<31,12> are connected to GND.
@@ -36,7 +36,7 @@ Figure 1 illustrates a circuit diagram of an embedded system prototype of a blin
 ![Blinking LED](https://github.com/nbonolok/MPLAX-XC8-BlinkingLED/blob/main/BlinkingLed.png)
 
 ## Source Code XC8 C
-The listing below is the XC8 source code for a blinking LED connected to the PIC16F887 microcontroller’s PORTB<RB0> pin. 
+The listing below is the XC8 source code for a blinking LED connected to the PIC16F887 microcontroller’s PORTB&lt;RB0&gt; pin. 
 ```C
 //CONFIG1
 #pragma config FOSC = INTRC_NOCLKOUT, WDTE = OFF, PWRTE = ON, MCLRE = OFF, CP = OFF
